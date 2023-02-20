@@ -1,5 +1,5 @@
 <template>
-  <button :class="theme">
+  <button type="button" :class="{ btn: true, dark: theme === 'dark', light: theme === 'light' }">
     <slot></slot>
   </button>
 </template>
@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 button {
-  margin: 10px;
+  margin: 4px;
 }
 .dark {
   background-color: #dfdfdf;
