@@ -1,3 +1,3 @@
 export default {
-  inProduction: true,
+  inProduction: false,
 };
